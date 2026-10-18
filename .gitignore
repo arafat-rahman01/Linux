@@ -1,0 +1,9 @@
+.vscode/
+*~
+*.swp
+*.swo
+*.log
+.env
+.env.*
+.DS_Store
+Thumbs.db
