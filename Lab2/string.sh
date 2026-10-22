@@ -11,4 +11,5 @@ second="Bin"
 full="$first $second"
 echo "$full"
 
-sentence
+sentence="I like Java,Java is my type of language"
+echo "${sentence/Java/cpp}"
