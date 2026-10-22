@@ -13,3 +13,4 @@ echo "$full"
 
 sentence="I like Java,Java is my type of language"
 echo "${sentence/Java/cpp}"
+echo "${sentence//Java/cpp}"
