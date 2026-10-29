@@ -1,6 +1,5 @@
 #!/bin/bash
-echo "Hello from Linux!"
-echo "My username: $USER"
-echo "Today's date: $(date)"
-echo "Current directory: $(pwd)"
+echo "User Name: $USER"
+echo "Today Date: $(date)";
+echo "Curr Directory: $(pwd)";
 
