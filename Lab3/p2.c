@@ -2,7 +2,7 @@
 #include<bits/stdc++.h>
 #include<unistd.h>
 #include<sys/wait.h>
-using namesapce std;
+using namespace std;
 int main(){
     int status;
     pid_t pid=fork();
