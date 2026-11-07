@@ -1,17 +1,22 @@
 // 4.1 Program 1: Creating a Process and Printing Process IDs
-
-#include<stdio.h>
-#include<unistd.h>
-int main(){
-    pid_t pid=fork();
-    if(pid<0){
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    pid_t pid = fork();
+    if (pid < 0) {
         perror("fork failed");
         return 1;
     }
-    else if(pid==0){
-        printf("%d, %d\n",getpid(),getppid());
-    }else{
-        printf("%d,%d\n",getpid(),pid);
+    else if (pid == 0) {
+        cout << "CHILD: "
+             << getpid() << ", "
+             << getppid() << endl;
+    }
+    else {
+        cout << "PARENT: "
+             << getpid() << ", "
+             << pid << endl;
+
         sleep(1);
     }
     return 0;
